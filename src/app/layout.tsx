@@ -1,4 +1,6 @@
 import './globals.css'
+import { Ubuntu } from 'next/font/google'
+const ubuntu = Ubuntu({ weight: ["300", "400", "500","700"], subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={ubuntu.className}>{children}</body>
     </html>
   )
 }

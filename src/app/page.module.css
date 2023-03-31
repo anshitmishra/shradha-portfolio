@@ -1,30 +1,201 @@
 .main {
   position: relative;
+  width: 100%;
+  height: auto;
+}
+.mainContainer {
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
 }
-.mainOne {
+.mainContainerItemOne {
   position: relative;
-  width: 65%;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainerItemOneHeader {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 30px;
+}
+.mainContainerItemOneHolder {
+  position: relative;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: 1px solid white;
 }
-.mainOneImage {
-  position: relative;
-  width: 350px;
-  height: 300px;
-  transform: scale(1.5);
+.mainContainerItemOneHolderItem {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 90%;
 }
-.mainTwo {
+.mainContainerItemOneHolderItemText {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  width: auto;
+  height: auto;
+  writing-mode: vertical-lr;
+  font-size: 70px;
+  color: black;
+}
+
+.mainContainerItemOneHolderItemDesign1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mainContainerItemOneHolderItemDesign1Text {
   position: relative;
-  width: 35%;
+  width: auto;
+  height: auto;
+  padding: 5px;writing-mode: vertical-lr;
+  word-break: keep-all;
+  font-size: 20px;
+  color: black;
+}
+
+
+
+
+
+
+.mainContainerItemTwo {
+  position: relative;
+  width: 50%;
   height: 100%;
-  background-color: #ff6362;
-  border: 1px solid white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainerItemTwoHolder {
+  position: relative;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  overflow: hidden;
+}
+.mainContainerItemTwoHolderBg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 6px 12px -2px rgba(245, 245, 251, .25), 0 3px 7px -3px hsla(0, 100%, 98%, .3);
+  background: rgba(255, 255, 255, 0.8);
+  overflow: visible;
+  backdrop-filter: blur(20px);
+
+}
+.mainContainerItemTwoHolderDesign1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  border-radius: 50%;
+}
+.mainContainerItemTwoHolderDesign2 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100px;
+  height: 100px;
+  background-color: #FBD461;
+  border-radius: 50%;
+}
+.mainContainerItemTwoHolderContent {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mainContainerItemTwoHolderContent h2{
+  position: relative;
+  width: auto;
+  height: auto;
+  font-size: 40px;
+  font-weight: 500;
+  color: #222;
+
+}
+
+.mainContainerItemTwoHolderContent h3{
+  position: relative;
+  width: auto;
+  height: auto;
+  font-size: 30px;
+  font-weight: 500;
+  color:rgba(0, 0, 0);
+  opacity: .5;
+}
+.mainContainerItemTwoHolderContent p{
+  position: relative;
+  width: auto;
+  height: auto;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mainContainerItemTwoHolderContentButton {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+}
+.mainContainerItemTwoHolderContentButton button{
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.mainContainerItemTwoHolderContentButton .button1{
+  position: relative;
+  background-color: #111;
+  color: white;
+}
+.mainContainerItemTwoHolderContentButton .button2{
+  position: relative;
+  color: #111;
+  background: transparent;
+  border: 1px solid black;
 }
